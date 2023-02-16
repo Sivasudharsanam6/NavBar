@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+body{
+    background-image: url("naturepic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+span{
+    color: yellow;
+    padding-left: 20px;
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+.nav ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+}
+.nav ul li a{
+    color: white;
+    padding: 15px 10px;
+}
+.nav ul li a:hover{
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+@media (max-width:768px){
+    .nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(216,216,79);
+        text-align: center;
+        padding: 0;
+        top: 50px;
+        left: -100%;
+        transition: .5s;
+    }
+    nav ul.slide{
+        left: 0;
+        transition: .5s;
+    }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul li a{
+        border: none;
+        color: black;
+    }
+    .nav ul li:hover{
+        background-color: black;
+    }
+    .nav ul li a:hover{
+        border: none;
+    }
+    .nav ul li:hover a{
+        color: white;
+    }
+    /* nav ul.slide{
+        left: 0;
+        transition: 2s;
+    } */
+    .hamburger{
+        float: right;
+        padding-right: 20px;
+        padding-top: 12px;
+    }
+    .hamburger .line{
+        width: 15px;
+        height: 5px;
+        background-color: white;
+        margin-bottom: 5px;
+        display: block;
+    }
+}
